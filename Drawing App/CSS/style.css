@@ -1,0 +1,80 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+/* GENERAL STYLES */
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
+}
+
+.toolBar {
+  background-color: #3498db;
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  height: 120px;
+}
+
+.decreaseSize,
+.addSize {
+  color: hsla(0, 0%, 0%, 0.7);
+  background-color: #e9e8e8;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-inline: 15px;
+}
+
+.brushSize {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+}
+
+.colorPalette {
+  margin-left: 50px;
+}
+
+.colorPalette input {
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  background: none;
+  cursor: pointer;
+}
+
+.clearBtn button {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  padding: 11px 10px;
+  border-radius: 10px;
+  background: #f68084;
+  color: white;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+@media (max-width: 450px) {
+  .decreaseSize,
+  .addSize {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+  } 
+}
